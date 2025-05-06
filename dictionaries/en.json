@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "title": "Bringing Your <0>Electronic</0> Ideas to Life",
+    "description": "At Takwīn, we specialize in designing cutting-edge electronic products, PCB solutions, and embedded device systems with a strong focus on IoT and Robotics.",
+    "solutions_button": "Our Solutions",
+    "contact_button": "Contact Us"
+  },
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "languageSwitcher": {
+      "switchTo": "Switch to"
+    }
+  },
+  "features": {
+    "title": "Our Expertise",
+    "subtitle": "Innovative solutions for modern electronics challenges, powered by cutting-edge technology and expert engineering.",
+    "cards": [
+      {
+        "title": "PCB Design & Manufacturing",
+        "description": "Custom printed circuit board solutions designed for performance, reliability, and cost-efficiency."
+      },
+      {
+        "title": "Robotics Systems",
+        "description": "Advanced robotics solutions for automation, manufacturing, and specialized applications."
+      },
+      {
+        "title": "IoT Devices",
+        "description": "Connected device solutions that integrate seamlessly with cloud platforms and existing infrastructure."
+      }
+    ],
+    "icons": [
+      {
+        "title": "PCB Design",
+        "description": "Custom circuit boards for any application"
+      },
+      {
+        "title": "Robotics",
+        "description": "Automation and intelligent systems"
+      },
+      {
+        "title": "IoT Solutions",
+        "description": "Connected devices for the modern world"
+      },
+      {
+        "title": "Embedded Systems",
+        "description": "Specialized computing for specific tasks"
+      }
+    ]
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our range of electronic solutions designed to meet the demands of modern technology.",
+    "viewAll": "View All Products",
+    "learnMore": "Learn more",
+    "cards": [
+      {
+        "title": "Custom PCB Solutions",
+        "description": "High-performance printed circuit boards designed for reliability and efficiency."
+      },
+      {
+        "title": "IoT Smart Devices",
+        "description": "Connected solutions that bring intelligence and automation to everyday objects."
+      },
+      {
+        "title": "Robotics Components",
+        "description": "Precision engineered parts for industrial and commercial robotics applications."
+      }
+    ]
+  }
+}
