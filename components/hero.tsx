@@ -49,13 +49,13 @@ export default function Hero({ dictionary, lang }: HeroProps) {
       </div>
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={isRtl ? { lineHeight: '1.2', letterSpacing: '0.025em' } : {}}>
             {renderTitle()}
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed" style={isRtl ? { lineHeight: '1.5', letterSpacing: '0.025em' } : {}}>
             {hero.description}
           </p>
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+          <div className="text-lg md:text-xl text-gray-200 mb-8 mt-4 leading-relaxed">
             <Link href={`/${lang}/contact`} className="bg-takwin-green hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-md transition-colors text-lg text-center">
               {hero.contact_button}
             </Link>
