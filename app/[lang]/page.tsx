@@ -2,6 +2,9 @@ import { getDictionary } from "@/lib/dictionary"
 import type { Locale } from "@/lib/i18n-config"
 import Image from "next/image"
 import Hero from "@/components/hero"
+import FeaturesSection from "@/components/features-section"
+import IconGridSection from "@/components/icon-grid-section"
+import ProductsSection from "@/components/products-section"
 
 interface Testimonial {
   name: string;
@@ -21,6 +24,9 @@ export default async function Home({
   return (
     <>
       <Hero dictionary={dictionary} lang={lang} />
+      <FeaturesSection dictionary={dictionary} />
+      <IconGridSection dictionary={dictionary} />
+      <ProductsSection dictionary={dictionary} lang={lang} />
     </>
   )
 }

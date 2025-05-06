@@ -15,8 +15,8 @@ export default function IconGridSection({ dictionary }: IconGridProps) {
   const { features } = dictionary;
   
   return (
-    <section className="pt-24 bg-gradient-to-b from-takwin-dark to-[#0a3144]">
-      <div className="mt-20 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 container mx-auto px-4">
+    <section className="pt-16 pb-16 bg-gradient-to-b from-takwin-dark to-[#0a3144]">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 container mx-auto px-4">
         <div className="flex flex-col items-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 text-takwin-green mb-4">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />

@@ -59,66 +59,50 @@ export default function Header({
                 height={40} 
                 className="rounded-md mr-2" 
               />
-              <span className={`text-xl font-bold ${isScrolled ? 'text-white' : 'text-takwin-dark'}`}>
+              <span className="text-xl font-bold text-white">
                 {lang === 'ar' ? 'تكوين' : 'Takwīn'}
               </span>
             </Link>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex gap-8">
             <Link 
               href={`/${lang}`} 
-              className={`font-medium transition-colors cursor-pointer ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors cursor-pointer text-white hover:text-takwin-green"
             >
               {navbar.home}
             </Link>
             <Link 
               href={`/${lang}/products`} 
-              className={`font-medium transition-colors cursor-pointer ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors cursor-pointer text-white hover:text-takwin-green"
             >
               {navbar.products}
             </Link>
             <Link 
               href={`/${lang}/about`} 
-              className={`font-medium transition-colors cursor-pointer ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors cursor-pointer text-white hover:text-takwin-green"
             >
               {navbar.about}
             </Link>
             <Link 
               href={`/${lang}/contact`} 
-              className={`font-medium transition-colors cursor-pointer ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors cursor-pointer text-white hover:text-takwin-green"
             >
               {navbar.contact}
             </Link>
           </nav>
           
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center gap-2">
             <button 
               onClick={() => switchToLanguage('en')}
-              className={`font-medium transition-colors px-2 ${
-                isScrolled 
-                  ? 'text-white hover:text-takwin-green' 
-                  : 'text-takwin-dark hover:text-takwin-green'
-              } ${lang === 'en' ? 'font-bold' : ''}`}
+              className={`font-medium transition-colors px-2 text-white hover:text-takwin-green ${lang === 'en' ? 'font-bold' : ''}`}
             >
               EN
             </button>
-            <span className={isScrolled ? 'text-white' : 'text-takwin-dark'}>|</span>
+            <span className="text-white">|</span>
             <button 
               onClick={() => switchToLanguage('ar')}
-              className={`font-medium transition-colors px-2 ${
-                isScrolled 
-                  ? 'text-white hover:text-takwin-green' 
-                  : 'text-takwin-dark hover:text-takwin-green'
-              } ${lang === 'ar' ? 'font-bold' : ''}`}
+              className={`font-medium transition-colors px-2 text-white hover:text-takwin-green ${lang === 'ar' ? 'font-bold' : ''}`}
             >
               عربي
             </button>
@@ -127,7 +111,7 @@ export default function Header({
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu}
-              className={isScrolled ? 'text-white' : 'text-takwin-dark'}
+              className="text-white"
             >
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -153,54 +137,44 @@ export default function Header({
       
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className={`md:hidden py-4 px-4 ${isScrolled ? 'bg-takwin-dark' : 'bg-white'}`}>
-          <nav className="flex flex-col space-y-4">
+        <div className={`md:hidden py-4 px-4 ${isScrolled ? 'bg-takwin-dark' : 'bg-takwin-dark'}`}>
+          <nav className="flex flex-col gap-4">
             <Link 
               href={`/${lang}`} 
-              className={`font-medium transition-colors ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors text-white hover:text-takwin-green"
               onClick={() => setMobileMenuOpen(false)}
             >
               {navbar.home}
             </Link>
             <Link 
               href={`/${lang}/products`} 
-              className={`font-medium transition-colors ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors text-white hover:text-takwin-green"
               onClick={() => setMobileMenuOpen(false)}
             >
               {navbar.products}
             </Link>
             <Link 
               href={`/${lang}/about`} 
-              className={`font-medium transition-colors ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors text-white hover:text-takwin-green"
               onClick={() => setMobileMenuOpen(false)}
             >
               {navbar.about}
             </Link>
             <Link 
               href={`/${lang}/contact`} 
-              className={`font-medium transition-colors ${
-                isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-              }`}
+              className="font-medium transition-colors text-white hover:text-takwin-green"
               onClick={() => setMobileMenuOpen(false)}
             >
               {navbar.contact}
             </Link>
             
-            <div className="flex space-x-4 py-2 border-t border-gray-200">
+            <div className="flex gap-4 py-2 border-t border-gray-300">
               <button 
                 onClick={() => {
                   switchToLanguage('en');
                   setMobileMenuOpen(false);
                 }}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-                } ${lang === 'en' ? 'font-bold' : ''}`}
+                className={`font-medium transition-colors text-white hover:text-takwin-green ${lang === 'en' ? 'font-bold' : ''}`}
               >
                 English
               </button>
@@ -209,9 +183,7 @@ export default function Header({
                   switchToLanguage('ar');
                   setMobileMenuOpen(false);
                 }}
-                className={`font-medium transition-colors ${
-                  isScrolled ? 'text-white hover:text-takwin-green' : 'text-takwin-dark hover:text-takwin-green'
-                } ${lang === 'ar' ? 'font-bold' : ''}`}
+                className={`font-medium transition-colors text-white hover:text-takwin-green ${lang === 'ar' ? 'font-bold' : ''}`}
               >
                 العربية
               </button>
