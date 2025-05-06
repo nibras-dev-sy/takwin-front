@@ -4,6 +4,7 @@ import type { Locale } from "@/lib/i18n-config"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Inter, Cairo } from "next/font/google"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const cairo = Cairo({
@@ -32,6 +33,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={lang} dir={dir} className={`${inter.variable} ${cairo.variable}`}>
+      <head>
+        <Script 
+          src="https://kit.fontawesome.com/a5561a3743.js" 
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`min-h-screen flex flex-col ${lang === "ar" ? "font-arabic" : "font-sans"}`}>
         <Header lang={lang} dictionary={dictionary} />
         <main className="flex-1">{children}</main>
