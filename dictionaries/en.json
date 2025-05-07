@@ -143,5 +143,81 @@
     "map": {
       "title": "Our Location"
     }
-  }
+  },
+  "productsPage": {
+    "title": "Our Products",
+    "subtitle": "Explore our range of innovative electronic solutions designed to power the technology of tomorrow.",
+    "categories": {
+      "all": "All Products",
+      "iot": "IoT Devices",
+      "pcb": "PCB Solutions",
+      "robotics": "Robotics"
+    },
+    "productDetails": {
+      "viewDetails": "View Details",
+      "features": "Features",
+      "description": "Description",
+      "applications": "Applications",
+      "specifications": "Specifications",
+      "backToProducts": "Back to Products"
+    }
+  },
+  "productsList": [
+    {
+      "id": "tp2202401",
+      "model": "TP2202401",
+      "title": "IoT Gateway",
+      "shortDescription": "A Modular Raspberry Pi-Based Communication and I/O Module Device.",
+      "fullDescription": "The TP2202401 is a modular, high-performance microprocessor-based IoT gateway, featuring fully integrated serial communication (RS485) and industrial I/O within Linux Computing Power.",
+      "category": "iot",
+      "image": "/rasp.png",
+      "applications": [
+        "Smart-Home Applications",
+        "Industrial Automation Applications",
+        "Serial and Wireless Communication",
+        "Robotics",
+        "Energy and Automation"
+      ],
+      "features": {
+        "wifi": {
+          "title": "Wi-Fi",
+          "specs": [
+            "802.11b/g/n / 802.11n",
+            "2.4 GHz based Wireless"
+          ]
+        },
+        "bluetooth": {
+          "title": "Bluetooth®",
+          "specs": [
+            "Compliant with Bluetooth v4.2 BR/EDR and Bluetooth LE specifications"
+          ]
+        },
+        "cpu": {
+          "title": "CPU and Memory",
+          "specs": [
+            "1.5GHz 4Core ARM Cortex-A72 CPU",
+            "4GB LPDDR4 RAM",
+            "32GB Permanent memory"
+          ]
+        },
+        "peripherals": {
+          "title": "Advanced Peripheral Interfaces",
+          "specs": [
+            "RS485 Serial Converter",
+            "I2C Serial Communication Bus",
+            "UART Serial Communication Bus",
+            "4ch Isolated Digital Input",
+            "4ch Digital Output 240V/10A each channel",
+            "15-40VDC Power Supply",
+            "3xUSB Interface",
+            "Operating ambient temperature range: -10°C to 70°C",
+            "High Voltage Protection",
+            "Short Circuit Protection",
+            "Metal or Plastic Case",
+            "External Antenna (optional)"
+          ]
+        }
+      }
+    }
+  ]
 }
