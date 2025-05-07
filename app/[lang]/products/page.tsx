@@ -29,16 +29,27 @@ interface Product {
 export default async function ProductsPage({
   params,
 }: {
-  params: { lang: Locale }
+  params: any
 }) {
-  const { lang } = params
+  const { lang } = await params
   const dictionary = await getDictionary(lang)
   const { productsPage, productsList } = dictionary
 
   return (
     <>
-      <section className="py-20 bg-gradient-to-b from-takwin-dark to-[#0a3144] text-white">
-        <div className="container mx-auto px-6">
+      <section className="pt-24 pb-16 bg-gradient-to-b from-takwin-dark to-[#0a3144] text-white relative overflow-hidden">
+        {/* Background Grid Image */}
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image 
+            src="/grid1.avif" 
+            alt="Grid Pattern" 
+            fill
+            className="object-cover"
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{productsPage.title}</h1>
             <p className="text-lg text-gray-200 max-w-2xl mx-auto">{productsPage.subtitle}</p>
