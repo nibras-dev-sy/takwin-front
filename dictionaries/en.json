@@ -95,5 +95,27 @@
     "expertise2": "Cutting-edge robotics solutions that combine precision hardware with intelligent control systems for industrial and commercial applications.",
     "expertise3Title": "IoT Ecosystem Development",
     "expertise3": "End-to-end IoT solutions from sensor design to cloud connectivity, creating seamless networks of intelligent devices."
+  },
+  "about": {
+    "title": "About Takwīn",
+    "meaning": {
+      "title": "Our Name",
+      "description": "Takwīn \"تكوين Ancient Arabic: 'كوّن'\" is an Arabic word, derived from the root verb كوّن (kawwana), which means \"to form,\" \"to create,\" or \"to bring into being\"."
+    },
+    "company": {
+      "title": "Our Company",
+      "description": "At Takwīn, we specialize in designing cutting-edge electronic products, PCB (Printed Circuit Board) solutions, and embedded device systems with a strong focus on the Internet of Things (IoT) and Robotics. Our mission is to bring your ideas to life by leveraging advanced technology and innovative design principles."
+    },
+    "details": {
+      "website": "Website",
+      "websiteUrl": "www.takwīn.com",
+      "industry": "Industry",
+      "industryValue": "Technology, Information and Internet",
+      "size": "Company size",
+      "sizeValue": "2-10 employees",
+      "employees": "1 associated member LinkedIn members who've listed Takwīn as their current workplace on their profile.",
+      "founded": "Founded",
+      "foundedValue": "2024"
+    }
   }
 }
