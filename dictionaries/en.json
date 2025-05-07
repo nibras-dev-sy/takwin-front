@@ -117,5 +117,31 @@
       "founded": "Founded",
       "foundedValue": "2024"
     }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Reach out to us for any inquiries or collaboration opportunities.",
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "label": "Address",
+        "value": "Maslak, 34467 Sarıyer/Istanbul, Turkey"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+90 212 123 4567"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@takwin.com"
+      },
+      "hours": {
+        "label": "Working Hours",
+        "value": "Monday - Friday: 9:00 AM - 6:00 PM"
+      }
+    },
+    "map": {
+      "title": "Our Location"
+    }
   }
 }
