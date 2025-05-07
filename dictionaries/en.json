@@ -69,5 +69,31 @@
         "description": "Precision engineered parts for industrial and commercial robotics applications."
       }
     ]
+  },
+  "missionVision": {
+    "title": "Our Mission & Vision",
+    "intro": "At Takwīn, we're driven by innovation and excellence in electronics manufacturing. Learn about our guiding principles and what sets us apart.",
+    "missionTitle": "Our Mission",
+    "mission1": "To bring innovative ideas to life through cutting-edge electronic design and manufacturing, empowering businesses to create revolutionary products that shape the future of technology.",
+    "mission2": "We strive to be a catalyst for technological advancement by providing reliable, efficient, and sustainable electronics manufacturing solutions that exceed client expectations and contribute to a more connected world.",
+    "visionTitle": "Our Vision",
+    "vision1": "To be the global leader in electronics manufacturing, recognized for our innovation, quality, and commitment to advancing technology that improves lives and businesses around the world.",
+    "vision2": "We envision a future where our electronic solutions power the next generation of smart devices, sustainable infrastructure, and revolutionary technologies that address humanity's greatest challenges.",
+    "valuesTitle": "Our Core Values",
+    "valuesIntro": "The principles that guide everything we do at Takwīn",
+    "value1Title": "Innovation",
+    "value1": "We embrace creativity and forward-thinking approaches to develop pioneering solutions that push the boundaries of what's possible in electronics manufacturing.",
+    "value2Title": "Excellence",
+    "value2": "We are committed to delivering the highest quality in every product we design and manufacture, adhering to rigorous standards and continuous improvement.",
+    "value3Title": "Integrity",
+    "value3": "We operate with transparency, honesty, and ethical practices in all our business relationships, building trust with our clients, partners, and employees.",
+    "expertiseTitle": "Our Expertise",
+    "expertiseIntro": "At Takwīn, we've built a reputation for excellence in electronics manufacturing through years of dedication to quality and innovation. Our team of engineers and technicians brings specialized knowledge across a wide range of electronic disciplines.",
+    "expertise1Title": "Advanced PCB Design",
+    "expertise1": "Expertise in multi-layer boards, high-speed designs, and miniaturization techniques for complex electronic systems.",
+    "expertise2Title": "Robotics & Automation",
+    "expertise2": "Cutting-edge robotics solutions that combine precision hardware with intelligent control systems for industrial and commercial applications.",
+    "expertise3Title": "IoT Ecosystem Development",
+    "expertise3": "End-to-end IoT solutions from sensor design to cloud connectivity, creating seamless networks of intelligent devices."
   }
 }

@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import type { Locale } from "@/lib/i18n-config"
+import Image from "next/image"
 
 export default function Footer({
   lang,
@@ -20,11 +21,17 @@ export default function Footer({
         <div className={`grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 ${isRtl ? 'rtl' : 'ltr'}`}>
           {/* Company Info */}
           <div>
-            <Link href={`/${lang}`} className="flex items-center mb-6 cursor-pointer">
-              <div className="w-10 h-10 bg-white flex items-center justify-center rounded-md mr-2 rtl:ml-2 rtl:mr-0">
-                <span className="text-[#072331] text-xl font-bold">T</span>
-              </div>
-              <span className="text-white text-xl font-bold">{lang === 'ar' ? 'تكوين' : 'Takwīn'}</span>
+          <Link href={`/${lang}`} className="flex items-center cursor-pointer">
+              <Image 
+                src="/logo.jpg" 
+                alt="Takwīn Logo" 
+                width={40} 
+                height={40} 
+                className="rounded-md mr-2" 
+              />
+              <span className="text-xl font-bold text-white">
+                {lang === 'ar' ? 'تكوين' : 'Takwīn'}
+              </span>
             </Link>
             <p className="text-gray-300 mb-6">
               {isRtl 
@@ -56,21 +63,6 @@ export default function Footer({
               <li>
                 <Link href={`/${lang}/products/pcb`} className="text-gray-300 hover:text-[#38d784] transition-colors cursor-pointer">
                   {isRtl ? 'تصميم PCB' : 'PCB Design'}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/products/iot`} className="text-gray-300 hover:text-[#38d784] transition-colors cursor-pointer">
-                  {isRtl ? 'أجهزة إنترنت الأشياء' : 'IoT Devices'}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/products/robotics`} className="text-gray-300 hover:text-[#38d784] transition-colors cursor-pointer">
-                  {isRtl ? 'الروبوتات' : 'Robotics'}
-                </Link>
-              </li>
-              <li>
-                <Link href={`/${lang}/products`} className="text-gray-300 hover:text-[#38d784] transition-colors cursor-pointer">
-                  {isRtl ? 'جميع المنتجات' : 'All Products'}
                 </Link>
               </li>
             </ul>
