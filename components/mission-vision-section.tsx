@@ -8,6 +8,7 @@ interface MissionVisionSectionProps {
 export default function MissionVisionSection({ dictionary, lang }: MissionVisionSectionProps) {
   const isRtl = lang === 'ar';
   const { missionVision } = dictionary;
+  
   return (
     <section id="mission-vision" className="py-16 bg-white">
       <div className="container mx-auto px-6">

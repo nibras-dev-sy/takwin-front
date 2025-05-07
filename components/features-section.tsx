@@ -17,7 +17,7 @@ export default function FeaturesSection({ dictionary }: FeaturesProps) {
   const { features } = dictionary;
   
   return (
-    <section id="features" className="py-16 md:py-24 bg-white">
+    <section id="features" className="pb-16 pt-8 md:pb-24 md:pt-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-takwin-dark mb-4">{features.title}</h2>

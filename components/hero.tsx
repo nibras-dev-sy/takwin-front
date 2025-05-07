@@ -49,10 +49,10 @@ export default function Hero({ dictionary, lang }: HeroProps) {
       </div>
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={isRtl ? { lineHeight: '1.2', letterSpacing: '0.025em' } : {}}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {renderTitle()}
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed" style={isRtl ? { lineHeight: '1.6', letterSpacing: '0.025em' } : {}}>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
             {hero.description}
           </p>
           <div className="text-lg md:text-xl text-gray-200 mb-8 mt-4 leading-relaxed">
