@@ -52,7 +52,7 @@ export default function Hero({ dictionary, lang }: HeroProps) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={isRtl ? { lineHeight: '1.2', letterSpacing: '0.025em' } : {}}>
             {renderTitle()}
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed" style={isRtl ? { lineHeight: '1.5', letterSpacing: '0.025em' } : {}}>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed" style={isRtl ? { lineHeight: '1.6', letterSpacing: '0.025em' } : {}}>
             {hero.description}
           </p>
           <div className="text-lg md:text-xl text-gray-200 mb-8 mt-4 leading-relaxed">

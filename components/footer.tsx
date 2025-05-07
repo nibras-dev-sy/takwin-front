@@ -103,20 +103,20 @@ export default function Footer({
               {isRtl ? 'اتصل بنا' : 'Contact Us'}
             </h3>
             <ul className="space-y-3">
-              <li className={`flex items-start ${isRtl ? 'rtl' : ''}`}>
-                <i className={`fa-solid fa-location-dot mt-1 ${isRtl ? 'ml-3' : 'mr-3'} text-[#38d784]`}></i>
+              <li className={`flex items-start gap-2`}>
+                <i className={`fa-solid fa-location-dot mt-1 text-[#38d784]`}></i>
                 <span className="text-gray-300">
                   {isRtl 
                     ? '123 شارع التقنية، حي الإلكترونيات، 12345' 
                     : '123 Tech Street, Electronics District, 12345'}
                 </span>
               </li>
-              <li className={`flex items-center ${isRtl ? 'rtl' : ''}`}>
-                <i className={`fa-solid fa-phone ${isRtl ? 'ml-3' : 'mr-3'} text-[#38d784]`}></i>
-                <span className="text-gray-300">+966 55 123 4567</span>
+              <li className={`flex items-center gap-2`}>
+                <i className={`fa-solid fa-phone text-[#38d784]`}></i>
+                <span className="text-gray-300" dir="ltr">+966 55 123 4567</span>
               </li>
-              <li className={`flex items-center ${isRtl ? 'rtl' : ''}`}>
-                <i className={`fa-solid fa-envelope ${isRtl ? 'ml-3' : 'mr-3'} text-[#38d784]`}></i>
+              <li className={`flex items-center gap-2`}>
+                <i className={`fa-solid fa-envelope text-[#38d784]`}></i>
                 <span className="text-gray-300">info@takwin.com</span>
               </li>
             </ul>
